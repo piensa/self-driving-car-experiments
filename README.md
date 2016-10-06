@@ -10,6 +10,29 @@ Use `bin/get_data.sh` to download and extract the data.
 You will get a [rosbag file](http://wiki.ros.org/Bags) which you can use together with [ROS](http://www.ros.org/) to explore the data.
 To create a dataset for prediction, you can use the Ubuntu-based ROS docker image found in `ros`.
 
+## Installing Theano in bare-metal.
+
+Create and activate virtual environment.
+
+```
+virtualenv env/
+source env/bin/activate
+```
+
+Install numpy and scipy.
+
+```
+pip install numpy
+easy_install scipy
+```
+
+Install Theano
+
+```
+pip install Theano==0.8.2
+```
+
+
 ### Quick and easy - use image from Docker hub
 
 To get up and running quickly you only need docker.
